@@ -1,4 +1,4 @@
-# Web App with Active Directory Authentication and Golang
+# Golang Web App with Active Directory Authentication
 
 A little proof of concept showing how to authenticate a user against Active Directory, serve HTML templates and handling sessions with a custom in-memory storage using `mux` from the [Gorilla Toolkit](https://www.gorillatoolkit.org/pkg/mux).
 
