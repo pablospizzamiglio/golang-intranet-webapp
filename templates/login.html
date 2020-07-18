@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Log in</title>
+  </head>
+  <body>
+    <h1>Log in</h1>
+    {{ range.errors }}
+    {{ . }}
+    {{ end }}
+    <form action="/login" method="POST" accept-charset="UTF-8">
+      {{ .csrfField }}
+      <div>
+        <label>Username:</label>
+        <input type="text" name="username" required />
+      </div>
+      <br />
+      <div>
+        <label>Password:</label>
+        <input type="password" name="password" required />
+      </div>
+      <br />
+      <div>
+        <button type="submit">Sign in</button>
+      </div>
+    </form>
+  </body>
+</html>
